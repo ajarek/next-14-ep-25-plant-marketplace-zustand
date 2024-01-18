@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/shop', label: 'Shop' },
+    { href: '/contact', label: 'Contact' },
   ]
   const { theme, setTheme } = useTheme()
 
