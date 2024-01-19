@@ -5,8 +5,10 @@ import { useTheme } from 'next-themes'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ModeToggle } from './mode-toggle'
+import { useCartStore } from '@/store/useCartStore'
 
 const Navbar = () => {
+  const { totalItems } = useCartStore()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navLinks = [
     { href: '/', label: 'Home' },
@@ -18,7 +20,7 @@ const Navbar = () => {
     <>
       <header className='  max-w-[1440px] mx-auto z-10 w-full'>
         <nav className='h-20 flex justify-between items-center max-container  px-12 max-sm:px-2 py-2 border-b-2 border-green-800 '>
-          <div >
+          <div>
             <Link
               href='/'
               className='text-3xl font-bold flex justify-center items-center'
@@ -57,7 +59,7 @@ const Navbar = () => {
                 height={40}
                 className='bg-white mr-2 border-2 border-green-800 rounded-lg p-2'
               />
-              <sup className='text-xl'>{0}</sup>
+              <sup className='text-xl'>{totalItems}</sup>
             </Link>
             <ModeToggle />
           </ul>
@@ -121,7 +123,9 @@ const Navbar = () => {
                     height={40}
                     className='text-primary rounded-sm mr-2'
                   />
-                  <sup className='text-xl text-primary-foreground'>{0}</sup>
+                  <sup className='text-xl text-primary-foreground'>
+                    {totalItems}
+                  </sup>
                 </>
               ) : (
                 <>
@@ -132,7 +136,9 @@ const Navbar = () => {
                     height={40}
                     className='bg-primary-foreground rounded-sm mr-2'
                   />
-                  <sup className='text-xl text-primary-foreground '>{0}</sup>
+                  <sup className='text-xl text-primary-foreground '>
+                    {totalItems}
+                  </sup>
                 </>
               )}
             </Link>
