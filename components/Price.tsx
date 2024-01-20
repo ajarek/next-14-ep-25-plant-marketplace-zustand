@@ -39,7 +39,7 @@ const Price = ({ product }: { product: ProductType }) => {
       transition: Bounce,
       });
       setTimeout(() => {
-        router.push('/shop');
+        router.push('/');
       }, 3000);
       
       
