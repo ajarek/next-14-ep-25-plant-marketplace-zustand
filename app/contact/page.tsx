@@ -17,7 +17,7 @@ export default function Contact() {
     } catch (error) {
       console.log(error)
     } finally {
-      redirect(`/${messageUser.name}`)
+      redirect(`/thanks?name=${messageUser.name}&email=${messageUser.email}`)
     }
   }
 
