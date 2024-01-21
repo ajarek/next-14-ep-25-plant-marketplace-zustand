@@ -54,6 +54,7 @@ const Cart = () => {
                     height: '50px',
                     objectFit: 'cover',
                   }}
+                  priority
                 />
               </TableCell>
               <TableCell>{item.name}</TableCell>
@@ -80,7 +81,7 @@ const Cart = () => {
         <TableFooter>
           <TableRow>
             <TableCell
-              colSpan={5}
+              colSpan={6}
               className=' text-right'
             >
               Total Price{' '}
@@ -94,11 +95,11 @@ const Cart = () => {
               $
             </TableCell>
           </TableRow>
-          <TableRow>
-            <TableCell  colSpan={5}   className='text-right'>
+          <TableRow >
+            <TableCell  colSpan={6}   className='text-right '>
               
               <Link
-                className='uppercase  bg-primary text-primary-foreground hover:bg-primary/90 py-2 px-8  rounded-sm'
+                className=' uppercase  bg-primary text-primary-foreground hover:bg-primary/90 py-2 px-12  rounded-sm'
                 href={'/payment'}
               >
                 Pay
