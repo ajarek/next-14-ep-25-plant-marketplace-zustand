@@ -13,7 +13,6 @@ export default function Contact() {
       return { message: 'Form data is not valid' }
     }
     try {
-      console.log(messageUser)
     } catch (error) {
       console.log(error)
     } finally {

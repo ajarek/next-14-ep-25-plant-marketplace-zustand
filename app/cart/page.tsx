@@ -95,9 +95,11 @@ const Cart = () => {
               $
             </TableCell>
           </TableRow>
-          <TableRow >
-            <TableCell  colSpan={6}   className='text-right '>
-              
+          <TableRow>
+            <TableCell
+              colSpan={6}
+              className='text-right '
+            >
               <Link
                 className=' uppercase  bg-primary text-primary-foreground hover:bg-primary/90 py-2 px-12  rounded-sm'
                 href={'/payment'}

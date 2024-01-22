@@ -32,9 +32,8 @@ const ProductId = ({ params }: { params: { id: string } }) => {
       <div className='flex flex-col items-start justify-between p-4 '>
         <div className='text-2xl'>{itemId.name}</div>
         <div>{itemId.description}</div>
-        
+
         <Price product={itemId} />
-        
       </div>
     </main>
   )

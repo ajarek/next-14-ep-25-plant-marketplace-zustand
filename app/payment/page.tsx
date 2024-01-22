@@ -22,31 +22,35 @@ const Payment = () => {
       theme: 'colored',
     })
   }
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault()
-    
-    notifySuccess();
-    [...products].map((item:any)=>removeFromCart(item));
+
+    notifySuccess()
+    ;[...products].map((item: any) => removeFromCart(item))
     setTimeout(() => {
       router.push('/')
     }, 3000)
   }
-const allPayValue=([...products]?.reduce((a: number,b: { price: number; count: number })=>a+b.price*b.count,0)).toFixed(2)
+  const allPayValue = [...products]
+    ?.reduce(
+      (a: number, b: { price: number; count: number }) => a + b.price * b.count,
+      0
+    )
+    .toFixed(2)
   return (
     <div className=' w-full min-h-[calc(100vh-80px)]  flex flex-col justify-center items-center  '>
       <ToastContainer />
-      <form onSubmit={handleSubmit} className='w-[360px] max-sm:w-full bg-gray-200 p-12 max-sm:p-2 rounded-lg shadow-lg'>
-        <div className='flex'>
-
-     
-        </div>
+      <form
+        onSubmit={handleSubmit}
+        className='w-[360px] max-sm:w-full bg-gray-200 p-12 max-sm:p-2 rounded-lg shadow-lg'
+      >
+        <div className='flex'></div>
         <div className='w-100%'>
           <Label htmlFor='cardNumber'>Do zapłaty</Label>
           <Input
             type='text'
             value={allPayValue}
             required
-
           />
         </div>
 
@@ -80,15 +84,9 @@ const allPayValue=([...products]?.reduce((a: number,b: { price: number; count: n
         </div>
 
         <div className='w-100% py-4 flex justify-end'>
-          <Button
-            type='submit'
-          
-          >
-            I pay by card
-          </Button>
+          <Button type='submit'>I pay by card</Button>
         </div>
       </form>
-     
     </div>
   )
 }

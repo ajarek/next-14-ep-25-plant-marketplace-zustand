@@ -7,7 +7,6 @@ export type ProductType = {
   description?: string
   src?: string
   price: number
-  
 }
 
 export type CartItemType = {
@@ -44,27 +43,33 @@ export const useCartStore = create(
 
       addToCart(item: CartItemType) {
         const products = get().products
-        const product = products.find((product: { id: string }) => product.id === item.id)
+        const product = products.find(
+          (product: CartItemType) => product.id === item.id
+        )
 
         if (product) {
           product.count += item.count
 
           set((state: CartType) => ({
-            products: products.map((p) => p.id === item.id ? { ...p, count: p.count + item.count } : p),
+            products: products.map((p) =>
+              p.id === item.id ? { ...p, count: p.count + item.count } : p
+            ),
             totalItems: state.totalItems + item.count,
-            totalPrice: state.totalPrice + (item.count * item.price),
+            totalPrice: state.totalPrice + item.count * item.price,
           }))
         } else {
           set((state: CartType) => ({
             products: [...state.products, item],
             totalItems: state.totalItems + item.count,
-            totalPrice: state.totalPrice + (item.count * item.price),
+            totalPrice: state.totalPrice + item.count * item.price,
           }))
         }
       },
       removeFromCart(item: CartItemType) {
         const products = get().products
-        const index = products.findIndex((product: CartItemType) => product.id === item.id)
+        const index = products.findIndex(
+          (product: CartItemType) => product.id === item.id
+        )
 
         if (index !== -1) {
           const updatedProducts = [...products]
