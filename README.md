@@ -1,10 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 
-<img width="300" alt="Zrzut ekranu 2024-01-22 210814" src="https://github.com/ajarek/next-14-ep-25-plant-marketplace-zustand/assets/61388692/63072b87-b7a4-49e1-90fa-aa6c93fad728">
+<img width="300" alt="Zrzut ekranu 2024-01-22 210556" src="https://github.com/ajarek/next-14-ep-25-plant-marketplace-zustand/assets/61388692/e2be8540-8b39-4a75-881e-bccc9f5c0c53">
 <img width="300" alt="Zrzut ekranu 2024-01-22 210706" src="https://github.com/ajarek/next-14-ep-25-plant-marketplace-zustand/assets/61388692/a887650d-ec93-40cd-9b28-157842e42d0e">
 <img width="300" alt="Zrzut ekranu 2024-01-22 210647" src="https://github.com/ajarek/next-14-ep-25-plant-marketplace-zustand/assets/61388692/7e42871a-aa44-458f-9c47-be1637e7803b">
-<img width="300" alt="Zrzut ekranu 2024-01-22 210556" src="https://github.com/ajarek/next-14-ep-25-plant-marketplace-zustand/assets/61388692/e2be8540-8b39-4a75-881e-bccc9f5c0c53">
+<img width="300" alt="Zrzut ekranu 2024-01-22 210814" src="https://github.com/ajarek/next-14-ep-25-plant-marketplace-zustand/assets/61388692/63072b87-b7a4-49e1-90fa-aa6c93fad728">
 <img width="150" alt="Zrzut ekranu 2024-01-22 210507" src="https://github.com/ajarek/next-14-ep-25-plant-marketplace-zustand/assets/61388692/b3fe4f69-2932-42e5-ab30-7701cfd18766">
 <img width="150" alt="Zrzut ekranu 2024-01-22 210226" src="https://github.com/ajarek/next-14-ep-25-plant-marketplace-zustand/assets/61388692/03eff47d-9a0c-4eee-a7d1-025f49039368">
 <img width="150" alt="Zrzut ekranu 2024-01-22 210446" src="https://github.com/ajarek/next-14-ep-25-plant-marketplace-zustand/assets/61388692/38ba2a6e-5035-4c37-96ee-a8b4b12cde61">
